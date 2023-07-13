@@ -82,7 +82,7 @@ const Category = () => {
 {/* Heading */}
 <div className="text-center mb-10">
     <h1 className="scroll-m-20 text-xl  tracking-tight lg:text-2xl capitalize">
-    Topss  
+    Tops
     </h1>
   
     <div className="flex mt-2 justify-center">

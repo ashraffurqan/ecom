@@ -1,7 +1,7 @@
 import React from 'react'
 import Bestsellingcard from '../../../components/bestsellingcard'
 
-export const Category = () => {
+const Category = () => {
   const bestsell=[
     {
     src:"/jeans.jpg",

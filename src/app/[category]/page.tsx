@@ -1,7 +1,7 @@
 import React from 'react'
 import Bestsellingcard from '../../../components/bestsellingcard'
 
-export const category = () => {
+export const Category = () => {
   const bestsell=[
     {
     src:"/jeans.jpg",
@@ -105,4 +105,4 @@ export const category = () => {
     </div>
   )
 }
-export default category
+export default Category

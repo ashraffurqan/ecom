@@ -20,13 +20,13 @@ const Navbar=()=>{
                 <ul className="p-2">
                   <li><Link href={'/tops'}>Tops </Link></li>
                   <li><Link href={'/paints'}>Paints</Link></li>
-                  <li><Link href={'accesories/jewllery'}>Accesories/Jewllery</Link></li>
+                  <li><Link href={'/accesories'}>Accesories/Jewllery</Link></li>
                   <li><Link href={'/shoes'}>Shoes</Link></li>
                 </ul>
               </details>
             </li>
-            <li><Link href={'#'}>About</Link></li>
-            <li><Link href={'#'}>Contact</Link></li>
+            <li><Link href={'/about'}>About</Link></li>
+            <li><Link href={'/contact'}>Contact</Link></li>
             </ul>
           </div>
           <Image src={require('../public/logo.jpg')} alt ='L'  className="hidden lg:block pl-4"  width={100} height={300}  />  

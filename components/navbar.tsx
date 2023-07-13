@@ -18,10 +18,10 @@ const Navbar=()=>{
               <details>
                 <summary>Women</summary>
                 <ul className="p-2">
-                  <li><Link href={'#'}>Tops </Link></li>
-                  <li><Link href={'#'}>Paints</Link></li>
-                  <li><Link href={'#'}>Accesories/Jewllery</Link></li>
-                  <li><Link href={'#'}>Shoes</Link></li>
+                  <li><Link href={'/tops'}>Tops </Link></li>
+                  <li><Link href={'/paints'}>Paints</Link></li>
+                  <li><Link href={'accesories/jewllery'}>Accesories/Jewllery</Link></li>
+                  <li><Link href={'/shoes'}>Shoes</Link></li>
                 </ul>
               </details>
             </li>

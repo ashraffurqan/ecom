@@ -1,4 +1,5 @@
 
+import Bestselling from '../../components/bestselling'
 import Categories from '../../components/categories'
 import Hero from '../../components/hero'
 import Pormotion from '../../components/pormotion'
@@ -9,8 +10,9 @@ export default function Home() {
     <div>
        <Hero />
     <Services />
-    <Pormotion />
-    <Categories />
+    <Pormotion /> 
+     <Categories />
+    <Bestselling />
     </div>
   )
 }

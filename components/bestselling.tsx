@@ -12,19 +12,27 @@ export const Bestselling = () => {
         alt:"Cotton Jeans",
         title:"Male Jeans",
         discription:"Best quality Jeans",
-        price:150 },
+        price:150,
+        category:"jeans",
+        slug:"Cotton Jeans" 
+      
+      },
         {
             src:"/neck.jpg",
             alt:"Ladies Jewellery",
             title:"Neckless",
             discription:"Best quality jewllery",
-            price:150 },
+            price:150,
+            category:"accesories",
+            slug:"neckless"  },
             {
                 src:"/top.jpg",
                 alt:"Ladies Cotton Top",
                 title:"Tops",
                 discription:"Best quality cotton tops",
-                price:150 },
+                price:150 ,
+                category:"tops",
+                slug:"upper tops" },
 
     ]
   return (
@@ -44,7 +52,10 @@ export const Bestselling = () => {
 <div className='flex  flex-wrap justify-center gap-5 '>
 {
     bestsell.map((items,i)=>(
-        <Bestsellingcard key={i} src={items.src} alt={items.alt} title={items.title} discription={items.discription}  price={items.price} />
+        <Bestsellingcard key={i} src={items.src} alt={items.alt} title={items.title} discription={items.discription}  price={items.price} 
+        category={items.category}
+        slug={items.slug}
+        />
     ))
 }
 </div>

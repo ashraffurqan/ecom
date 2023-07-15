@@ -20,9 +20,9 @@ const About = () => {
     Pakistans first digital hyperlocal shopping mall. We have Everything for Everyone, for real!
     From The Store, To You!
     
-    Our mission is to deliver everything you need to your doorstep. Whether it's groceries, medicines, food or apparel, everything is now just a click away. BBM’s perspective is to bring the shopping aisles to you, swipe and shop away from the comfort of your homes!
+    Our mission is to deliver everything you need to your doorstep. Whether it's groceries, medicines, food or apparel, everything is now just a click away. BBMs perspective is to bring the shopping aisles to you, swipe and shop away from the comfort of your homes
     
-    Dont miss out on the ultimate shopping experience, we are literally bringing the mall to you!</p>
+    Dont miss out on the ultimate shopping experience, we are literally bringing the mall to you</p>
     </div>
      </div>
   

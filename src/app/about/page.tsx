@@ -1,12 +1,7 @@
 import React from 'react'
 const About = () => {
   return (
-    <div> 
-
-Asan Mart
-
-     </div>
-  
+    <div>Mart</div>
   )
 }
 export default About

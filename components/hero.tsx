@@ -7,7 +7,7 @@ const Hero = ()=>{
       <div className="hero-overlay bg-opacity-30"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl ">Summer Seassion</h1>
+          <h1 className="mb-5 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase ">winter session</h1>
           <p className="mb-5 scroll-m-20 text-xl font-semibold tracking-tight">Shop At Asan Mart Clothing And Enjoy Timeless Designs And High Quality Fashion Wear. Delivery Within 2 - 4 Business Days. High Quality Items.</p>
           <Button className="outline outline-offset-2 outline-1 text-mywhite group hover:outline-orange-500
            duration-300">

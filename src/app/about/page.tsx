@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <div className="mt-[100px] mb-[100px] text-center"> 
+    <div > 
 
 Asan Mart
 

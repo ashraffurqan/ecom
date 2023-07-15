@@ -1,22 +1,21 @@
 
-import React from 'react'
 import { Button } from '../../../../components/ui/button'
 import { FaHeart, FaShoppingCart, FaPlus, FaMinus } from 'react-icons/fa'
 import SlugComponent from '../../../../components/slugComponent'
 
-export const Slug = () => {
+const Slug = () => {
   return (
     <div><section className="text-gray-600 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <SlugComponent />
-         {/* image */}
+          {/* image */}
           {/* <img
             alt="ecommerce"
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
             src="https://dummyimage.com/400x400"
           /> */}
-          
+
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">
               Women Tops
@@ -187,7 +186,7 @@ export const Slug = () => {
             </div>
             {/* uqantity */}
             <div className='flex items-center '>
-            <span className="mr-4 scroll-m-20 border-b pb-2 text-base font-semibold tracking-tight transition-colors first:mt-0">Quantity</span>
+              <span className="mr-4 scroll-m-20 border-b pb-2 text-base font-semibold tracking-tight transition-colors first:mt-0">Quantity</span>
               <Button className='
      group bg-myblack  hover:bg-transparent
      text-mywhite hover:text-myblack

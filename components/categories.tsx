@@ -14,6 +14,7 @@ export const Categories = () => {
     <div className="flex mt-2 justify-center">
       <div className="w-16 h-1 rounded-full bg-orange-500 inline-flex" />
     </div>
+    
   </div>
   {/* heading end */}
   {/* categories start */}

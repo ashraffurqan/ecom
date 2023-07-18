@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <div className="mt-[100px] mb-[100px]text-center"> 
+    <div className="mt-[100px] mb-[100px]text-center "> 
 
 
 <div className="text-center mb-10">
@@ -14,9 +14,9 @@ const About = () => {
     </div>
   </div>
 
-  <div className="h-[100px] w-fit ml-4 mr-4 bg-gray-500 text-myblack ">
+  <div className="h-fit w-fit ml-4 mr-4 bg-gray-500 text-myblack flex-wrap flex justify-between items-center ">
    
-      <p className="scroll-m-20 text-xl  tracking-tight ">
+      <p className="scroll-m-20 text-xl  tracking-tight flex-wrap flex justify-center items-center ">
     Pakistans first digital hyperlocal shopping mall. We have Everything for Everyone. for real
     From The Store. To You
     

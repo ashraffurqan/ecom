@@ -39,7 +39,7 @@ const Navbar=()=>{
          </div>
         </div>
         <div className="navbar-end">
-        <div className="dropdown dropdown-end">
+      <Link href={"/cart"} >
       <label tabIndex={0} className="pr-4 cursor-pointer ">
         <div className="indicator">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7  hover:text-orange-600 duration-300 " 
@@ -51,18 +51,10 @@ const Navbar=()=>{
           <span className="badge badge-sm indicator-item font-semibold   group-hover:text-myblack duration-300 text-myblack">8</span>
         </div>
       </label>
-      <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
-        <div className="card-body">
-          <span className="font-bold text-lg">8 Items</span>
-          <span className="text-info">Subtotal: $999</span>
-          <div className="card-actions">
-            <button className="btn btn-primary btn-block">View cart</button>
-          </div>
-        </div>
-      </div>
+      </Link>
       </div>
         </div>
-      </div></div>
+      </div>
     )
 }
 export default Navbar

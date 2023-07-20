@@ -7,6 +7,7 @@ import Bestsellingcard from './bestsellingcard';
 
 const FeaturedProduct = () => {
     // my data
+   
     const bestsell=[
         {
           src:"/jeans.jpg",
@@ -66,9 +67,9 @@ const FeaturedProduct = () => {
 
     var settings = {
         dots: true,
-        arrow:false,
+        arrows:false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -80,7 +81,7 @@ const FeaturedProduct = () => {
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              arrow:false,
+              arrows:false,
               dots: true
             }
           },
@@ -89,6 +90,7 @@ const FeaturedProduct = () => {
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
+              arrows:false,
               dots: true,
               initialSlide: 2
             }
@@ -97,7 +99,8 @@ const FeaturedProduct = () => {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              dots: true,
+              arrows:false,
+              dots: false,
               slidesToScroll: 1
               
             }
@@ -105,7 +108,7 @@ const FeaturedProduct = () => {
         ]
       };
     return (
-        <div className=' mt-[100px] mb-[100px]>FeaturedProduct'>
+        <div className=' mt-[100px] mb-[100px] '>
 
             {/* Heading */}
             <div className="text-center mb-10">
@@ -118,7 +121,9 @@ const FeaturedProduct = () => {
                 </div>
             </div>
             {/* carousel */}
-            <Slider {...settings}>
+           
+          <div>
+            <Slider className='pb-8' {...settings}>
       
             {
     bestsell.map((items,i)=>(
@@ -126,11 +131,13 @@ const FeaturedProduct = () => {
         category={items.category}
         slug={items.slug}
         />
+        
     ))
 }
         </Slider>
-
         </div>
+        </div>
+        
     )
 }
 

@@ -15,11 +15,11 @@ export const Bestsellingcard = ({src,alt,title,discription, price, category , sl
 <div className="max-w-[350px] h-[35rem] p-4 mx-auto shadow-md rounded-xl relative group ">
   <Link href={`/${category}/${slug}`}>
   {/* image div */}
-  <div className='block  h-[23rem] rounded overflow-hidden'>
-    <Image src={src} alt='load' height={500} width={500} className='h-[500px] w-[500px]' />
+  <div className='block  h-[23rem] rounded overflow-hidden object-cover'>
+    <Image src={src} alt='load' height={500} width={500} className='h-[300px] w-[500px]' />
     </div>
     {/* typegraphy and title div */}
-  <div className="mt-4">
+  <div  >
      <h2 className="scroll-m-20 border-b pb-2 text-lg text-myblack font-semibold tracking-tight transition-colors first:mt-0 line-clamp-1">
       {title}
     </h2>
@@ -35,13 +35,15 @@ export const Bestsellingcard = ({src,alt,title,discription, price, category , sl
   </div>
   </Link>
 {/* button div */}
-  <div>
+  <div className='mr-1 ml-1'>
     <Button className='
      group bg-myblack  hover:bg-transparent
      text-mywhite hover:text-myblack
      mt-2 scroll-m-20  text-base font-semibold rounded-xl absolute bottom-2 right-2 tracking-tight transition-colors  '>
          <FaShoppingCart className='mr-2 h-4 w-4 group-hover:text-orange-500 duration-300' />  Add to Cart</Button>
-    
+         <span>&nbsp; 
+        </span> <span>&nbsp; 
+        </span>
          <Button className='
      group bg-myblack  hover:bg-transparent
      text-mywhite hover:text-myblack

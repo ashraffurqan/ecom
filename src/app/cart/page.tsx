@@ -8,11 +8,11 @@ const Cart = () => {
             <div className='grid lg:grid-cols-3 grid-cols-1'>
                 {/* item */}
                 <div className='col-span-2'>
-                    <CartCard src="/top.jpg" title="Ladies top" size="xl" price= {1000} />
+                    <CartCard src="/top.jpg" title="Ladies top" size="xl" price={1000} />
                 </div>
 
                 {/* summary */}
-                <div className='bg-myblack/5  p-5 rounded-lg '>
+                <div className='bg-myblack/5  p-5 rounded-lg flex-wrap justify-between'>
                     {/* headding */}
                     <h2 className='scroll-m-20 text-lg font-semibold tracking-tight uppercase'>order summary</h2>
                     {/* divider */}
@@ -47,7 +47,7 @@ const Cart = () => {
                         <div className="divider mt-0  mb-1"></div>
 
                         {/* check out */}
-                        <div className='flex items-center justify-center w-full bg-myPink hover:bg-transparent duration-300
+                        <div className='flex items-center justify-center flex-wrap   bg-myPink hover:bg-transparent duration-300
 text-mywhite hover:text-myblack scroll-m-20 text-2xl font-semibold tracking-tight
 hover:shadow-md uppercase'>
                             <button className='uppercase'>proceed to check out</button>

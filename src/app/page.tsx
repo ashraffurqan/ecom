@@ -8,7 +8,7 @@ import Services from '../../components/services'
 
 export default function Home() {
   return (
-    <div>
+    <div  >
        <Hero />
        <FeaturedProduct/>
     <Services />

@@ -88,7 +88,7 @@ const FeaturedProduct = () => {
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 2,
               arrows:false,
               dots: true,

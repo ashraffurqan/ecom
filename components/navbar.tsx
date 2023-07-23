@@ -29,10 +29,10 @@ const Navbar=()=>{
             <li><Link href={'/contact'}>Contact</Link></li>
             </ul>
           </div>
-          <Image src={require('../public/logo.jpg')} alt ='L'  className="hidden lg:block pl-4"  width={100} height={300}  />  
+          <Image src={require('../public/logo.jpg')} alt ='L'  className="hidden lg:block pl-4 "  width={100} height={300}  />  
         </div>
         <div className="navbar-center  ">
-        <Image src={require('../public/logo.jpg')} alt ='L'  className="block lg:hidden "  width={100} height={300}  />
+        <Image src={require('../public/logo.jpg')} alt ='L'  className="block lg:hidden h-[40px] w-[150px]"  width={100} height={300}  />
          <div className=" hidden lg:flex">
 
             <NavigationMenuDemo />

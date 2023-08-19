@@ -30,7 +30,7 @@ const components: { title: string; href: string; description: string }[] = [
   },  
   {
     title: "Accesories / Jewllery",
-    href: "/acccesories",
+    href: "/accesories",
     description:
       "Stack and style irresistible women accessories for an on-trend look. Our new collection has it all.",
   },  

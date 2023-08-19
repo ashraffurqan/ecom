@@ -15,3 +15,6 @@
 .promo-3{
     background-image: url("../../public/promo3.jpg");
 }
+.myDiscount{
+    transform: rotate(-90deg) translate(0,-69px); transform-origin:100% 0  ;
+}

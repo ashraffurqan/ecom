@@ -4,65 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Bestsellingcard from './bestsellingcard';
+import { useAppSelector } from '@/app/store/hooks';
 
 const FeaturedProduct = () => {
     // my data
    
-    const bestsell=[
-        {
-          src:"/jeans.jpg",
-          alt:"Cotton Jeans",
-          title:"Male Jeans",
-          discription:"Best quality Jeans",
-          price:150,
-          category:"jeans",
-          slug:"Cotton Jeans" 
-        
-        },
-          {
-              src:"/neck.jpg",
-              alt:"Ladies Jewellery",
-              title:"Neckless",
-              discription:"Best quality jewllery",
-              price:150,
-              category:"accesories",
-              slug:"neckless"  },
-              {
-                  src:"/top.jpg",
-                  alt:"Ladies Cotton Top",
-                  title:"Tops",
-                  discription:"Best quality cotton tops",
-                  price:150 ,
-                  category:"tops",
-                  slug:"upper tops" },
-  
-              {
-                  src:"/promo3.jpg",
-                  alt:"Ladies Cotton Top",
-                  title:"Tops",
-                  discription:"Best quality cotton tops",
-                  price:150 ,
-                  category:"tops",
-                  slug:"upper tops" },
-  
-              {
-                  src:"/promo2.jpg",
-                  alt:"Ladies Cotton Top",
-                  title:"Tops",
-                  discription:"Best quality cotton tops",
-                  price:150 ,
-                  category:"tops",
-                  slug:"upper tops" },
-              {
-                  src:"/promo1.jpg",
-                  alt:"Ladies Cotton Top",
-                  title:"Tops",
-                  discription:"Best quality cotton tops",
-                  price:150 ,
-                  category:"tops",
-                  slug:"upper tops" },
-  
-      ]
+   
+      const bestsell =useAppSelector((state)=>state.products.slice(0,9));
     // caroudl setting
 
     var settings = {
@@ -126,10 +74,11 @@ const FeaturedProduct = () => {
             <Slider className='pb-8' {...settings}>
       
             {
-    bestsell.map((items,i)=>(
-        <Bestsellingcard key={i} src={items.src} alt={items.alt} title={items.title} discription={items.discription}  price={items.price} 
+    bestsell.map((items:any,i)=>(
+        <Bestsellingcard key={i} src={items.image[0]} alt={items.titile} title={items.title} discription={items.discription}  price={items.price} 
         category={items.category}
         slug={items.slug}
+        discount={items.discount}
         />
         
     ))

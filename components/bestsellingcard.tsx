@@ -6,8 +6,9 @@ import { Button } from './ui/button'
 import { FaHeart, FaShoppingCart} from "react-icons/fa"
 import Link from 'next/link'
 
-export const Bestsellingcard = ({src,alt,title,discription, price, category , slug}:{
-    src:string ,alt:string ,title:string,discription:string, price:number , category:string , slug:string
+export const Bestsellingcard = ({src,alt,title,discription, price, category , slug,discount}:{
+    src:string ,alt:string ,title:string,discription:string, price:number , category:string , slug:string 
+    ,discount:number
 }) => {
   return (
     <div>
@@ -27,10 +28,20 @@ export const Bestsellingcard = ({src,alt,title,discription, price, category , sl
     <p className="mt-2 scroll-m-20 border-b pb-2 text-sm font-semibold text-myPink tracking-tight transition-colors first:mt-0 line-clamp-1">
 {discription}
     </p>
+<div className='flex gap-4'>
 
-    <p className="mt-2 scroll-m-20 border-b pb-2 text-base font-semibold text-myblack tracking-tight transition-colors first:mt-0 line-clamp-1">
+  <p className={`mt-2 scroll-m-20 border-b pb-2 text-base 
+  font-semibold text-myblack tracking-tight transition-colors first:mt-0 line-clamp-1
+   ${discount >0 && "line-through decoration-2 decoration-orange-500/70"}`}>
      ${price}
       </p>
+      {/* discounted */}
+      {discount>0 && 
+    <p className=" scroll-m-20 border-b  text-base 
+    font-semibold text-myblack tracking-tight transition-colors first:mt-0 line-clamp-1">
+     ${price - (price*discount)/100}
+      </p>}
+      </div>
 
   </div>
   </Link>
@@ -49,6 +60,12 @@ export const Bestsellingcard = ({src,alt,title,discription, price, category , sl
      text-mywhite hover:text-myblack
      mt-2 scroll-m-20  text-base font-semibold rounded-xl absolute bottom-2 left-2 tracking-tight transition-colors  '>
          <FaHeart className='mr-2 h-4 w-4 group-hover:text-orange-500 duration-300' />  Buy Now</Button>
+
+         {discount>0 && (
+          <div className="scroll-m-20 text-xs font-semibold tracking-tight text-mywhite bg-orange-500 absolute
+          top-0 left-2 w-[87px] p-2 text-center uppercase rounded-tl-xl rounded-bl-xl myDiscount"
+          >{`${discount}%off`}</div>
+         )}
   </div>
 
 </div>

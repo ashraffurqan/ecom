@@ -22,7 +22,7 @@ const CartCard = () => {
             {/* Image */}
         <Image src={item.image[0]} alt={item.title} height={80} width={80} className='sm:w-[100px] 
              lg:w-[100px] h-[100px] ' />
-          <>   {console.log("asdfasf",item.image)}</>
+        
             {/* soeminfo */}
             <div className='flex px-5 justify-between items-center w-full'>
                 {/* title */}

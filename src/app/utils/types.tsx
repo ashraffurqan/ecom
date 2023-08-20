@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 export  type Product={
 id:number,
 title:string,
-image?:any|string[]| StaticImageData|undefined,
+image?:string[]| StaticImageData|undefined|any,
 slug:string,
 price:number,
 category:string,
@@ -15,7 +15,7 @@ discount?:number,
 export  type Cart={
 id:number,
 title:string,
-image?: any|string| StaticImageData,
+image?: string[]| StaticImageData|undefined|any,
 slug:string,
 price:number,
 discount?:number,

@@ -20,9 +20,9 @@ const CartCard = () => {
         <div  key={i} className='flex px-10 py-3'>
     
             {/* Image */}
-        <Image src={item.image} alt={item.title} height={80} width={80} className='sm:w-[100px] 
-             lg:w-[400px] h-[300px] ' />
-             
+        <Image src={item.image[0]} alt={item.title} height={80} width={80} className='sm:w-[100px] 
+             lg:w-[100px] h-[100px] ' />
+          <>   {console.log("asdfasf",item.image)}</>
             {/* soeminfo */}
             <div className='flex px-5 justify-between items-center w-full'>
                 {/* title */}
@@ -30,13 +30,13 @@ const CartCard = () => {
                     {item.title}
                    
                 </h2>
-                <br></br>   
+                 
                     {/* size */}
                     <p className='mt-2 text-lg text-myblack/80 leading-none line-clamp-1'>
                         {/* &nbsp; mean space */}
                         
                         size:&nbsp;<span>{item.size}</span></p>
-                        <br></br>
+                        
                     {/* quatity */}
                     <div className='flex mt-2 items-center '>
                         <button onClick={()=>(dispatch(subCart(item)))} className='group hover:bg-mywhite  bg-myblack text-mywhite
@@ -47,12 +47,12 @@ const CartCard = () => {
                         hover:text-myblack w-6 h-6 rounded-lg text-xs duration-300'>
                                <FaPlus className='h-4 w-4 mx-auto group hover:text-myblack'/> </button>
                     </div>
-                    <div className=' mt-6 flex-col  gap-5'>
+                    <div className=' mt-1 flex-col  gap-5'>
                     <h3 className='text-sm font-semibold  leading-none text-myblack '><span>Price:&nbsp;  
         
         </span> &#36;{item.discount>0 ? (item.price-((item.price*item.discount)/100)) 
-        *item.qty: item.price*item.qty}</h3> <br></br>
-         <FaTrash onClick={()=>dispatch(delItem(item.uuid))} className=' ml-6 text-base font-semibold leading-none line-clamp-1 text-red-500 cursor-pointer'/>
+        *item.qty: item.price*item.qty}</h3> 
+         <FaTrash onClick={()=>dispatch(delItem(item.uuid))} className='mt-2 ml-6 text-base font-semibold leading-none line-clamp-1 text-red-500 cursor-pointer'/>
 </div>
 
                 </div>

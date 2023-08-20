@@ -10,7 +10,7 @@ description:string,
 size:string[],
 color:string[],
 qty:number,
-discount?:number,
+discount?:number|any,
 };
 export  type Cart={
 id:number,
@@ -18,7 +18,7 @@ title:string,
 image?: string[]| StaticImageData|undefined|any,
 slug:string,
 price:number,
-discount?:number,
+discount?:number|any,
 category:string,
 
 size:string[],

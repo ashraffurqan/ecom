@@ -5,13 +5,14 @@ import { SlugComponent } from '../../../../components/slugComponent'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
 import { useState } from 'react'
 import { addToCard } from '@/app/store/features/cart'
+import AddToCartToast from '../../../../components/addToCartToast'
 
 const SlugPage = ({ params }: { params: { slug: string } }) => {
   const product = useAppSelector((state) => state.products);
 
 
   const slug = product.filter((val) => val.slug == params.slug);
-  const dispatch=useAppDispatch()
+ 
   const [cartItem, setCartItem] = useState({
     id: slug[0].id,
     title: slug[0].title,
@@ -138,11 +139,12 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
               </div>
 
               {/* add to cart */}
-              <Button onClick={() => dispatch(addToCard(cartItem))} className='
+              {/* <Button onClick={() => dispatch(addToCard(cartItem))} className='
  group bg-myblack  hover:bg-transparent
  text-mywhite hover:text-myblack
  mt-2 scroll-m-20  text-base font-semibold rounded-xl tracking-tight transition-colors  '>
-                <FaShoppingCart className='mr-2 h-4 w-4 group-hover:text-orange-500 duration-300' />  Add to Cart</Button>
+                <FaShoppingCart className='mr-2 h-4 w-4 group-hover:text-orange-500 duration-300' />  Add to Cart</Button> */}
+           <AddToCartToast cartItem={cartItem}/>
             </div>
           </div>
           <Button className='w-full

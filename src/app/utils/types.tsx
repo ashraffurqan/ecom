@@ -21,7 +21,7 @@ price:number,
 discount?:number|any,
 category:string,
 
-size:string[],
+size:string,
 color:string,
 qty:number,
 uuid:string|number|undefined

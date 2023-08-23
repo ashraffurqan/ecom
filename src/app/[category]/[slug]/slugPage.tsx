@@ -2,9 +2,9 @@
 import { Button } from '../../../../components/ui/button'
 import { FaHeart, FaShoppingCart, FaPlus, FaMinus } from 'react-icons/fa'
 import { SlugComponent } from '../../../../components/slugComponent'
-import { useAppDispatch, useAppSelector } from '../../store/hooks'
+import {  useAppSelector } from '../../store/hooks'
 import { useState } from 'react'
-import { addToCard } from '@/app/store/features/cart'
+
 import AddToCartToast from '../../../../components/addToCartToast'
 
 const SlugPage = ({ params }: { params: { slug: string } }) => {
@@ -22,7 +22,7 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
     discount: slug[0].discount,
     category: slug[0].category,
     color:slug[0].color[0],
-    size: slug[0].size,
+    size: slug[0].size[0],
 
     qty: slug[0].qty,
     
@@ -76,11 +76,11 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
               <span className="scroll-m-20 border-b pb-2 text-base font-semibold tracking-tight
              transition-colors first:mt-0 mr-4 ml-2 "> Size  </span>
               <div className="relative">
-                <select onClick={(e)=>setCartItem({...cartItem,size:e.target.value})} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+                <select onClick={(e)=>setCartItem({...cartItem, })} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
                   {slug[0].size.map((items, i) => (
 
                     <option key={i}>{items}</option>
-                  ))}
+                  ))} 
 
                 </select>
                 <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">

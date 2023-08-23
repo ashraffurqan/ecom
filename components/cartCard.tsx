@@ -10,7 +10,7 @@ import { addtoCart, delItem, subCart } from '@/app/store/features/cart'
 const CartCard = () => {
     const dispatch=useDispatch();
     const  cartArray=useAppSelector ((state) => state.cart);
-    console.log("dfas",cartArray)
+   
     return (
     <>
     {

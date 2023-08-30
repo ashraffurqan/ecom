@@ -9,8 +9,9 @@ import { useAppSelector } from "@/app/store/hooks";
 const Navbar=()=>{
   const Cart=useAppSelector((state)=>state.cart)
     return(
-        <div><div className="navbar bg-mywhite">
-        <div className="navbar-start">
+        <div>
+          <div className="navbar bg-mywhite   ">
+        <div className="navbar-start z-[100]  ">
           <div className="dropdown">
             <label tabIndex={0} className="p-0 text-2xl lg:hidden">
              <GiHamburgerMenu/>
@@ -35,10 +36,10 @@ const Navbar=()=>{
           <Image src={require('../public/logo.jpg')} alt ='L'  className="hidden lg:block pl-4 "  width={100} height={300}  />  
         </div>
         <div className="navbar-center  ">
-        <Image src={require('../public/logo.jpg')} alt ='L'  className="block lg:hidden h-[40px] w-[150px]"  width={100} height={300}  />
-         <div className=" hidden lg:flex">
+        <Image src={require('../public/logo.jpg')} alt ='L'  className="block lg:hidden h-[40px] w-[60px]"  width={100} height={300}  />
+         <div className=" hidden lg:flex ">
 
-            <NavigationMenuDemo />
+            <NavigationMenuDemo  />
          </div>
         </div>
         <div className="navbar-end">
